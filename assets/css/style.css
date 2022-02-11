@@ -1,0 +1,65 @@
+/*Estilos da página index.html com classes globais*/
+.center {
+    text-align: center;
+}
+
+.justify {
+    text-align: justify;
+}
+
+.container {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/*com ponto no inicio para caso de class, para caso de id é #*/
+/*parte para estilizar a posição do menu*/
+#menu li { 
+    display: inline;
+    padding: 15px; /*padding é dentro do elemento, margin é nas bordas*/
+}
+
+/*parte para modificar o texto do menu*/
+#menu li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+/*parte de interação mouse e menu*/
+#menu li a:hover {
+    color: orangered;
+}
+
+.p-30 {
+    padding: 50px;
+}
+
+.br-50 {
+    border-radius: 50%;
+}
+
+.wh {
+    width: 400px;
+    height: 400px;
+}
+
+.tm-social {
+    width: 50px;
+    height: 50px;
+}
+
+/*altera o distanciamento inferior*/
+.mb-50 {
+    margin-bottom:50px;
+}
+
+/*
+Estilos da página contato.html
+*/
+
+.ml-50 {
+    margin-left: 50px;
+}

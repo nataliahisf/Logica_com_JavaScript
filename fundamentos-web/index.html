@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Perfil</title>
-</head>
+    <link rel="stylesheet" href="C:/Users/natalia.ferreira/Desktop/Generation/FRONTEND/assets/css/style.css">
+    </head>
+
 <body>
-    <ul>
+    <ul id="menu">
         <li>
             <a href="index.html">Home</a>
         </li>
@@ -17,32 +19,63 @@
         </li>
     </ul>
 
-    <h1>Sobre a Natália</h1>
+    <h1 class="center">Sobre a Natália</h1> <!--essa class pode ser usada em caso de texto, mas não de objetos-->
 
-    <p>
-    Olá! Eu sou a Natália Ferreira, tenho 27 anos, sou de São Paulo Capital e vim contar pra vocês como a minha curiosidade e teimosia em aprender me trouxeram até aqui.
-    </p>
-Eu sou técnica em automação industrial e em eletroeletrônica, cursei porque sempre gostei de ver coisas relacionadas a tecnologia, mas também porque quando pequena eu queria ter um carrinho de controle remoto e eu "não podia ganhar brinquedos de meninos", então fui estudar automação pra criar o meu.
-Fiz o projeto do meu carrinho, me descobri apaixonada por programar (até então em assembly) e trabalhei por 4 anos na área de eletrônica onde aprendi muito.
-Mas não ter interação com o usuário começou a me gerar um certo incômodo, foi assim que fui fazer cursos mais administrativos e entrei na SumUp cuidando dos consultores de vendas.
-Nesses quase três anos de SumUp, interagi com programadores e percebi que eu poderia sim fazer os dois, ouvindo o usuário e programando melhorias.
-Foi nesse momento de "re-calculo de rota" unindo meu lado falante e programador que a Generation me foi apresentada.
-Ao cursar o bootcamp, ficou muito claro pra mim como quero trilhar a minha carreira daqui pra frente.
-Bom, foi um prazer contar um pouco dessa trajetória pra vocês, espero que possamos conversar mais e termos ótimas trocas juntes.
-</p>
+    <div class="container"> <!--usado para chamar os atributos de alinhamento de objetos-->
 
-<img src="https://i.pinimg.com/736x/51/c5/eb/51c5eb3d021b062ee1f53aac253e5378.jpg" alt="Era pra ser minha foto aqui">
+        <div class="p-30"> <!--class p-30 serve para afastar o elemento do que está ao lado-->
+            <p class="justify"> <!--class dá pra usar em vários elementos, para ser apenas nesse deve-se usar "id" e chamar usando #numerodoid-->
+                Olá! Eu sou a Natália Ferreira, tenho 27 anos, sou de São Paulo Capital e vim contar pra vocês como a minha curiosidade e teimosia em aprender me trouxeram até aqui.
+                </p>
+                <p class="justify">
+                Eu sou técnica em automação industrial e em eletroeletrônica, cursei porque sempre gostei de ver coisas relacionadas a tecnologia, mas também porque quando pequena eu queria ter um carrinho de controle remoto e eu "não podia ganhar brinquedos de meninos", então fui estudar automação pra criar o meu.
+                </p>
+                <p class="justify">
+            Fiz o projeto do meu carrinho, me descobri apaixonada por programar (até então em assembly) e trabalhei por 4 anos na área de eletrônica onde aprendi muito.
+            Mas não ter interação com o usuário começou a me gerar um certo incômodo, foi assim que fui fazer cursos mais administrativos e entrei na SumUp cuidando dos consultores de vendas.
+            Nesses quase três anos de SumUp, interagi com programadores e percebi que eu poderia sim fazer os dois, ouvindo o usuário e programando melhorias.
+                </p>
+                <p class="justify">
+            Foi nesse momento de "re-calculo de rota" unindo meu lado falante e programador que a Generation me foi apresentada.
+            Ao cursar o bootcamp, ficou muito claro pra mim como quero trilhar a minha carreira daqui pra frente.
+                </p>
+                <p class="justify">
+            Bom, foi um prazer contar um pouco dessa trajetória pra vocês, espero que possamos conversar mais e termos ótimas trocas juntes.
+                </p>
+        </div>
 
-<h2>Um vídeo maravilhoso</h2>
-<iframe
-width="560"
-height="315"
-src="https://www.youtube.com/embed/Cswaa7k5NYg"
-title="YouTube video player"
-frameborder="2"
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        <div>
+            <img class="br-50 wh p-30" src="C:/Users/natalia.ferreira/Desktop/Generation/FRONTEND/assets/img/fotomeublog.jpg" width="560" height="315" alt="Era pra ser minha foto aqui">
+        </div>
+  
+    </div>
+
+<h2 class="center">Aqui um vídeo que eu gosto</h2>
+<div class="container mb-50">
+    <iframe width="560" height="315"
+src="https://www.youtube.com/embed/R8of-SVzxJU"
+title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 allowfullscreen>
 </iframe>
+</div>
+
+<hr> <!--para separação de sessão-->
+<footer>
+    <div class="container">
+        <a href="https://github.com/nataliahisf" target="_blank"> <!--target abre o link em outra pagina-->
+        <img class="tm-social p-30" src="C:/Users/natalia.ferreira/Desktop/Generation/FRONTEND/assets/img/github icon.png"
+        alt="logo Github">
+        </a>
+        
+        <a href="https://www.linkedin.com/in/natalia--ferreira/" target="_blank">
+        <img class="tm-social p-30" src="C:/Users/natalia.ferreira/Desktop/Generation/FRONTEND/assets/img/linkedin icon.png"
+        alt="logo Linkedin">
+        </a>
+    </div>
+    <p class="center">
+Todos os direitos reservados: Natália Ferreira &copy
+    </p>
+</footer>
 
 </body>
 </html>

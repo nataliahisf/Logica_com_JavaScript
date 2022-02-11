@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
+    <link rel="stylesheet" href="C:/Users/natalia.ferreira/Desktop/Generation/FRONTEND/assets/css/style.css">
 </head>
 <body>
-    <ul>
+    <ul id="menu">
         <li>
             <a href="index.html">Home</a>
         </li>
@@ -17,32 +18,57 @@
         </li>
     </ul>
 
-    <h1>Entre em contato comigo</h1>
+    <h1 class="center">Entre em contato comigo</h1>
 
-    <form>
-        <label for="nome">Nome:</label>
-        <imput type="text" id="nome">
-        <textarea name="assunto" id="assunto" cols="40" rows="1"></textarea>
-        <br>
+    <div class="container mb-50">
+        <div>
+            <form>
+                <label for="nome">Nome:</label>
+                <p>
+                <imput type="text" id="nome">
+                <textarea name="assunto" id="assunto" cols="40" rows="1"></textarea>
+                </p>
+                 <label for="email">Email:</label>
+                 <p>
+                <imput type="email" id="email">
+                <textarea name="assunto" id="assunto" cols="40" rows="1"></textarea>
+                </p>
+                <p>
+                <label for="assunto">Assunto:</label>
+                </p>
+                <imput type="text" id="assunto">
+                <textarea name="assunto" id="assunto" cols="60" rows="5"></textarea>
+                <br>
+                <br>
+                <button>Enviar</button>
+            </form>
+        </div>
 
-         <label for="email">Email:</label>
-        <imput type="email" id="email">
-        <textarea name="assunto" id="assunto" cols="40" rows="1"></textarea>
-        <br>
-
-        <label for="assunto">Assunto:</label>
-        <imput type="text" id="assunto">
-        <textarea name="assunto" id="assunto" cols="60" rows="5"></textarea>
-        <br>
-        <br>
-        <button>Enviar</button>
-    </form>
-
-    <h2>Endereço</h2>
-    <p>Moema - São Paulo - SP</p>
-
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.0357944260163!2d-46.672406040139684!3d-23.60304919236865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce50aa08aba17b%3A0xe759e66fe646fdad!2sAv.%20Rouxinol%2C%20465-353%20-%20Moema%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004516-000!5e0!3m2!1spt-BR!2sbr!4v1644463397402!5m2!1spt-BR!2sbr"
-    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+        <div class="ml-50">
+            <p>Moema - São Paulo - SP</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.0357944260163!2d-46.672406040139684!3d-23.60304919236865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce50aa08aba17b%3A0xe759e66fe646fdad!2sAv.%20Rouxinol%2C%20465-353%20-%20Moema%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004516-000!5e0!3m2!1spt-BR!2sbr!4v1644463397402!5m2!1spt-BR!2sbr"
+    width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy">
     </iframe>
+        </div>
+    </div>
+
+    <hr> <!--para separação de sessão-->
+<footer>
+    <div class="container">
+        <a href="https://github.com/nataliahisf" target="_blank"> <!--target abre o link em outra pagina-->
+        <img class="tm-social p-30" src="C:/Users/natalia.ferreira/Desktop/Generation/FRONTEND/assets/img/github icon.png"
+        alt="logo Github">
+        </a>
+        
+        <a href="https://www.linkedin.com/in/natalia--ferreira/" target="_blank">
+        <img class="tm-social p-30" src="C:/Users/natalia.ferreira/Desktop/Generation/FRONTEND/assets/img/linkedin icon.png"
+        alt="logo Linkedin">
+        </a>
+    </div>
+    <p class="center">
+Todos os direitos reservados: Natália Ferreira &copy
+    </p>
+</footer>
+
 </body>
 </html>

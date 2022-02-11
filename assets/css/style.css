@@ -19,18 +19,19 @@
 #menu li { 
     display: inline;
     padding: 15px; /*padding é dentro do elemento, margin é nas bordas*/
+    background-color: black;
 }
 
 /*parte para modificar o texto do menu*/
 #menu li a {
     text-decoration: none;
-    color: black;
+    color: orangered;
     font-size: 20px;
 }
 
 /*parte de interação mouse e menu*/
 #menu li a:hover {
-    color: orangered;
+    color: gray;
 }
 
 .p-30 {
@@ -54,6 +55,11 @@
 /*altera o distanciamento inferior*/
 .mb-50 {
     margin-bottom:50px;
+}
+
+.titulos {
+    color: orangered;
+    font-family: Cambria;
 }
 
 /*

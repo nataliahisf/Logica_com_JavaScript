@@ -23,31 +23,28 @@
     <div class="container mb-50">
         <div>
             <form>
-                <label for="nome">Nome:</label>
-                <p>
-                <imput type="text" id="nome">
-                <textarea name="assunto" id="assunto" cols="40" rows="1"></textarea>
-                </p>
-                 <label for="email">Email:</label>
-                 <p>
-                <imput type="email" id="email">
-                <textarea name="assunto" id="assunto" cols="40" rows="1"></textarea>
-                </p>
-                <p>
-                <label for="assunto">Assunto:</label>
-                </p>
-                <imput type="text" id="assunto">
-                <textarea name="assunto" id="assunto" cols="60" rows="5"></textarea>
+                <label for="nome">Nome:</label> <br>
+                <input type="text" id="nome" onkeyup="validaNome()"> <!--tráz a função criada no js na hora da digitação, assim que termina de apertar as teclas-->
+                <div id="txtNome"></div>
+                <br>
+                <label for="email">Email:</label> <br>
+                <input type="email" id="email" onkeyup="validaEmail()"> <!--o type "email" já tem uma pre validação que verifica se tem o @ no e-mail-->
+                <div id="txtEmail"></div>
                 <br>
                 <br>
-                <button>Enviar</button>
+                <label for="assunto">Assunto:</label> <br>
+                <textarea name="assunto" id="assunto" cols="60" rows="5" onkeyup="validaAssunto()"></textarea>
+                <div id = "txtAssunto"></div>
+                <br>
+                <br>
+                <button onclick = "enviar()">Enviar</button> <!--após clicar no botão é chamada a função de validação de envio fake-->
             </form>
         </div>
 
         <div class="ml-50">
             <p>Moema - São Paulo - SP</p>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.0357944260163!2d-46.672406040139684!3d-23.60304919236865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce50aa08aba17b%3A0xe759e66fe646fdad!2sAv.%20Rouxinol%2C%20465-353%20-%20Moema%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004516-000!5e0!3m2!1spt-BR!2sbr!4v1644463397402!5m2!1spt-BR!2sbr"
-    width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy">
+    width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" id="mapa" onmousemove="mapaZoom()" onmouseout="mapaNormal()">
     </iframe>
         </div>
     </div>
@@ -69,6 +66,10 @@
 Todos os direitos reservados: Natália Ferreira &copy
     </p>
 </footer>
+
+<!--O script do Javascript começa aqui-->
+<script src="C:/Users/natalia.ferreira/Desktop/Generation/FRONTEND/assets/js/script.js"></script>
+
 
 </body>
 </html>
